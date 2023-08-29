@@ -1,6 +1,3 @@
-# Class representing a student
-# frozen_string_literal: true
-
 require_relative 'person'
 # Class representing a student
 class Student < Person
