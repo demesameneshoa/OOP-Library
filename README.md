@@ -48,6 +48,10 @@
 - **[Created Teacher Class]**
 - **[Student and Teacher Classess Inherit Person Class]**
 - **[Constructors extends inherited from Person]**
+- **[Created a class Nameable]**
+- **[Implemented a method called correct_name]**
+- **[Implemented CapitalizeDecorator]**
+- **[mplemented TrimmerDecorator]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -116,7 +120,7 @@ Install this project with:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/demesameneshoa/OOP-Library).
+Feel free to check the [issues page](https://github.com/demesameneshoa/OOP-Library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
