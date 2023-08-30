@@ -1,0 +1,6 @@
+# class representing nameable
+class Nameable
+  def correct_name
+    raise NotImplementedError
+  end
+end
