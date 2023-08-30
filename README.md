@@ -48,6 +48,10 @@
 - **[Created Teacher Class]**
 - **[Student and Teacher Classess Inherit Person Class]**
 - **[Constructors extends inherited from Person]**
+- **[Created a class Nameable]**
+- **[Implemented a method called correct_name]**
+- **[Implemented CapitalizeDecorator]**
+- **[mplemented TrimmerDecorator]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
