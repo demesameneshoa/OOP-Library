@@ -56,6 +56,7 @@
 - **[Implemented a method called Books]**
 - **[Implemented a method called Rental]**
 - **[Implemented Associations Within Classes]**
+- **[Implement User Interaction]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -113,7 +114,6 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Implement User Interaction**
 - [ ] **Preserve data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
