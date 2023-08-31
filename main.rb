@@ -8,12 +8,12 @@ end
 def list_of_options
   puts
   puts 'Please select an option by entering a number:'
-  puts '1. List all persons'
-  puts '2. List all books'
-  puts '3. List all rentals for a given person id'
-  puts '4. Add a person'
-  puts '5. Add a book'
-  puts '6. Add a rental'
+  puts '1. List all books'
+  puts '2. List all people'
+  puts '3. Create a person'
+  puts '4. Create a book'
+  puts '5. Create a Rental'
+  puts '6. List all rentals for a given id'
   puts '7. Exit'
   puts
 end
@@ -21,19 +21,19 @@ end
 def option(input)
   case input
   when 1
-    list_all_persons
-  when 2
     list_all_books
+  when 2
+    list_all_persons
   when 3
-    list_all_rentals
-  when 4
     add_person
-  when 5
+  when 4
     add_book
-  when 6
+  when 5
     add_rentals
+  when 6
+    list_all_rentals
   else
-    puts 'Invalid option. Please try again.'
+    puts 'Invalid Input'
   end
 end
 main
