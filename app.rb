@@ -67,6 +67,7 @@ class App
       student = Student.new(name, age, classroom, parent_permission: false)
       @persons << student
     end
+    puts 'Student addeed successfully'
   end
 
   def add_teacher
@@ -79,6 +80,7 @@ class App
     specialization = gets.chomp
     teacher = Teacher.new(name, age, specialization)
     @persons << teacher
+    puts 'Teacher addeed successfully'
   end
 
   def add_book
@@ -89,15 +91,16 @@ class App
     author = gets.chomp
     book = Book.new(title, author)
     @books.push(book)
+    puts 'Book addeed successfully'
   end
 
   def add_rentals
     puts 'Select which book you want to rent by its Number '
-    @books.each_with_index { |book, index| puts "Number: #{index + 1}. Title: #{book.title}, Author: #{book.author}" }
-    book_id = gets.chomp.to_i - 1
+    @books.each_with_index { |book, index| puts "Number: #{index}. Title: #{book.title}, Author: #{book.author}" }
+    book_id = gets.chomp.to_i
     puts 'Select which person will rent the book by its Number '
-    @persons.each_with_index { |person, index| puts "Number: #{index + 1}. Name: #{person.name}, Age: #{person.age}" }
-    person_id = gets.chomp.to_i - 1
+    @persons.each_with_index { |person, index| puts "Number: #{index}. Name: #{person.name}, Age: #{person.age}" }
+    person_id = gets.chomp.to_i
     print 'Date (YYYY/MM/DD): '
     date = gets.chomp.to_s
     rental = Rental.new(date, @books[book_id], @persons[person_id])
@@ -107,8 +110,7 @@ class App
 
   def list_all_rentals
     puts 'List is empty. Please add a rental' if @rentals.empty?
-    puts 'Enter the ID of the rental you want to see'
-    @persons.each { |person| puts "ID: #{person.id}, Name: #{person.name}" }
+    puts 'ID of the person:'
     id = gets.chomp.to_i
     puts 'Rented books:'
     @rentals.each do |rental|
