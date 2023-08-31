@@ -27,9 +27,7 @@ require_relative 'classroom'
 
 
 class App
-
   def initialize
-
     @persons = []
 
 
@@ -39,13 +37,9 @@ class App
 
 
     @rentals = []
-
   end
 
-
-
   def home_page
-
     until list_of_options
 
 
@@ -75,45 +69,29 @@ class App
 
 
     end
-
   end
 
-
-
   def list_all_persons
-
     puts 'People List is empty.' if @persons.empty?
 
 
 
     @persons.each do |person|
-
       puts "Name: #{person.name}, Age: #{person.age} ID: #{person.id}"
-
     end
-
   end
 
-
-
   def list_all_books
-
     puts 'Books List is empty.' if @books.empty?
 
 
 
     @books.each do |book|
-
       puts "Title: #{book.title}, Author: #{book.author}"
-
     end
-
   end
 
-
-
   def add_person
-
     print 'Do you want to create a student (1) or a teacher (2) ? [Input The Number]: '
 
 
@@ -147,13 +125,9 @@ class App
 
 
     end
-
   end
 
-
-
   def add_student
-
     print 'Age : '
 
     age = gets.chomp.to_i
@@ -187,13 +161,9 @@ class App
       @persons << student
 
     end
-
   end
 
-
-
   def add_teacher
-
     puts 'Creating a teacher'
 
 
@@ -227,13 +197,9 @@ class App
 
 
     @persons << teacher
-
   end
 
-
-
   def add_book
-
     puts 'Creating a book'
 
 
@@ -259,13 +225,9 @@ class App
 
 
     @books.push(book)
-
   end
 
-
-
   def add_rentals
-
     puts 'Select which book you want to rent by its Number '
 
 
@@ -307,13 +269,9 @@ class App
 
 
     puts 'Rental created successfully'
-
   end
 
-
-
   def list_all_rentals
-
     puts 'List is empty. Please add a rental' if @rentals.empty?
 
 
@@ -335,7 +293,6 @@ class App
 
 
     @rentals.each do |rental|
-
       if rental.person.id == id
 
 
@@ -357,10 +314,6 @@ class App
 
 
       end
-
     end
-
   end
-
 end
-
