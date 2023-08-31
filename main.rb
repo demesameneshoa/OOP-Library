@@ -1,26 +1,39 @@
-require_relative 'person'
+require_relative 'app'
+# Main Method and App Entry Point
+def main
+  app = App.new
+  app.home_page
+end
 
-require_relative 'student'
+def list_of_options
+  puts
+  puts 'Please select an option by entering a number:'
+  puts '1. List all books'
+  puts '2. List all people'
+  puts '3. Create a person'
+  puts '4. Create a book'
+  puts '5. Create a Rental'
+  puts '6. List all rentals for a given id'
+  puts '7. Exit'
+  puts
+end
 
-require_relative 'teacher'
-
-require_relative 'book'
-
-require_relative 'rental'
-
-require 'date'
-require_relative 'classroom'
-# create a new classroom
-math_classroom = Classroom.new('Math')
-# create new student
-student1 = Student.new('James', 15, math_classroom)
-# create a new book
-book1 = Book.new('1984', 'George Orwell')
-# create a person (teacher)
-teacher1 = Teacher.new('Wilson', 45, 'Science', parent_permission: true)
-# create a rental
-rental1 = Rental.new(Date.today, book1, teacher1)
-puts student1.classroom.label # Output: Math
-puts math_classroom.students.first.name # Output: James
-puts rental1.book.title # Output: 1984
-puts rental1.person.name # Output: Wilson
+def option(input)
+  case input
+  when 1
+    list_all_books
+  when 2
+    list_all_persons
+  when 3
+    add_person
+  when 4
+    add_book
+  when 5
+    add_rentals
+  when 6
+    list_all_rentals
+  else
+    puts 'Invalid Input'
+  end
+end
+main
