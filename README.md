@@ -52,6 +52,10 @@
 - **[Implemented a method called correct_name]**
 - **[Implemented CapitalizeDecorator]**
 - **[mplemented TrimmerDecorator]**
+- **[Implemented a method called Classroom]**
+- **[Implemented a method called Books]**
+- **[Implemented a method called Rental]**
+- **[Implemented Associations Within Classes]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,7 +113,7 @@ Install this project with:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Expand to add other classes.**
+- [ ] **Implement User Interaction**
 - [ ] **Preserve data**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
